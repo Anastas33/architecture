@@ -4,7 +4,9 @@ declare(strict_types = 1);
 
 namespace Model\Entity;
 
-class User
+use Contract\DomainObjectInterface;
+
+class User implements DomainObjectInterface
 {
     /**
      * @var int
